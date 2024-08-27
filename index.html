@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save for Later Poems</title>
+   
+    <!-- for bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- for css file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
+   
+
+
+</head>
+<body>
+    <h1>Save for Later Poems</h1>
+        
+    <div class="form-outline">
+       <input type="search" id="poem-search-input" class="form-control" placeholder="Search poems..." aria-label="Search" tabindex="1"/>
+    </div>
+    
+      
+    <button id="find-poem-click" type="button" class="btn btn-info">Search</button>
+
+      <!-- <button onclick="savePoem()">Find Poem</button> -->
+    <div id="poemList">
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
+    </div>
+    
+    <div id="poemContent"></div>
+    
+
+    <div class="modal fade" id="poemModal" tabindex="-1" role="dialog" aria-labelledby="poemModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="poemModalLabel">Poem</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="poem-display-area">
+          </div>
+        </div>
+      </div>
+    </div>
+        
+      
+    <div class="container">
+        <blockquote class="blockquote text-left">
+          <p>To elevate the soul, poetry is necessary.</p>
+          <footer>Edgar Allan Poe</footer>
+        </blockquote>
+      </div>
+    
+    <div class="container mt-4">
+      <h2>Saved Poem Titles</h2>
+      <div class="row">
+          <div class="col-sm-6">
+              <div id="saved-titles-display-area"></div>
+              <button type="button" class="btn btn-info" onclick="displaySavedPoemTitles()">Refresh Saved Poem List</button>
+
+          </div>
+          <div class="col-sm-6">
+            <img src="imgs/poe.png" alt="Edgar Allan Poe" class="img-fluid poe-image">
+          </div>
+      </div>
+  </div>
+  <script src="scripts/scripts.js"></script>
+
+</body>
+</html>

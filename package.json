@@ -1,0 +1,16 @@
+{
+  "name": "save-for-later-poems",
+  "version": "1.0.0",
+  "description": "Website that allows you to search through Poetry database and find poems.",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
