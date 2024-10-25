@@ -4,5 +4,3 @@ To run: node server.js from project main directory
 
 By Ellen Tomlins
 
-
-Youtube demo: https://youtu.be/nqlIikX9mxQ
